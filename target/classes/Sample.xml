@@ -1,96 +1,21 @@
-<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-   <CstmrCdtTrfInitn>
-    <GrpHdr>
-	 <MsgId>20230105-Ref10015</MsgId>
-	 <CreDtTm>2023-01-05T10:00:00.172</CreDtTm>
-	 <NbOfTxs>1</NbOfTxs>
-	 <InitgPty>
-		<Nm>Standard Bank Group</Nm>
-			<Id>
-				<OrgId>
-					<Othr>
-						<Id>TPS BAS BOL user id</Id> <!-- customer id --> 
-					</Othr>
-				</OrgId>
-			</Id>
-	 </InitgPty>
-	</GrpHdr>
-	<PmtInf>
-		<PmtInfId>ABC/086</PmtInfId>
-		<PmtMtd>TRF</PmtMtd>
-		<PmtTpInf>
-			<InstrPrty>NORM</InstrPrty> <!--HIGH - Urgent Payment, NORM - Nomal Payment-->
-			<CtgyPurp>
-				<Cd>LOAN</Cd>
-			</CtgyPurp>
-		</PmtTpInf>
-		<ReqdExctnDt>
-			<Dt>2023-01-09</Dt>
-		</ReqdExctnDt>
-         <Dbtr>
-            <Nm>Standard Bank Group</Nm>
-			<CtctDtls>
-				<Nm>Volante Technologies</Nm>
-				<EmailAdr>rajesh.pulikonda@standardbank.co.za</EmailAdr>
-			</CtctDtls>
-         </Dbtr>
-		<DbtrAcct>
-			<Id>
-				<Othr>
-					<Id>7220201</Id>
-				</Othr>
-			</Id>
-			<Ccy>ZAR</Ccy>
-		</DbtrAcct>
-		<DbtrAgt>
-			<FinInstnId>
-				<BICFI>SBZAZAJ0</BICFI>
-			</FinInstnId>
-			<BrnchId>
-				<Id>BranchId</Id>
-			</BrnchId>
-		</DbtrAgt>
-		<CdtTrfTxInf>
-			<PmtId>
-				<InstrId>InstrId-202301051015</InstrId>
-				<EndToEndId>E2E-2023010510015</EndToEndId>
-			</PmtId>
-			<Amt>
-				<InstdAmt Ccy="ZAR">1000</InstdAmt>
-			</Amt>
-			<ChrgBr>SHAR</ChrgBr>
-			<CdtrAgt>
-				<FinInstnId>
-					<BICFI>SBZAZAJ0</BICFI>
-				</FinInstnId>
-			</CdtrAgt>
-			<Cdtr>
-				<Nm>Res ZAR individual</Nm>
-				<PstlAdr>
-					<PstCd>1000</PstCd>
-					<TwnNm>liverpool</TwnNm>
-					<CtrySubDvsn>England</CtrySubDvsn>
-					<Ctry>GB</Ctry>
-					<AdrLine>add1</AdrLine>
-				</PstlAdr>
-			</Cdtr>
-			<CdtrAcct>
-				<Id>
-					<Othr>
-						<Id>000927119</Id>
-					</Othr>
-				</Id>
-			</CdtrAcct>
-			<RmtInf>
-				<Ustrd>BOP201</Ustrd>
-			</RmtInf>
-			<SplmtryData>
-				<PlcAndNm>NominatedUnpaidAccount</PlcAndNm>
-				<Envlp>
-					<any>23456789</any>
-				</Envlp>
-			</SplmtryData>			
-		</CdtTrfTxInf>			
-	</PmtInf>	
-   </CstmrCdtTrfInitn>
-</Document>
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+	<book category="Fiction">
+		<title>The Great Gatsby</title>
+		<author>F. Scott Fitzgerald</author>
+		<year>1925</year>
+		<price>10.99</price>
+	</book>
+	<book category="Nonfiction">
+		<title>Sapiens: A Brief History of Humankind</title>
+		<author>Yuval Noah Harari</author>
+		<year>2014</year>
+		<price>15.99</price>
+	</book>
+	<book category="Fiction">
+		<title>To Kill a Mockingbird</title>
+		<author>Harper Lee</author>
+		<year>1960</year>
+		<price>12.50</price>
+	</book>
+</bookstore>
